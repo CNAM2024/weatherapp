@@ -35,3 +35,10 @@ ask_air(apikey="XXXXXXXXXXXXXXXXXXXXXXXX",city="Toulouse")
  'PM10': {'concentration': 2.69, 'aqi': 2, 'color': 'green'},
  'overall_aqi': {'aqi': 98, 'color': 'yellow'}}
 ```
+
+## Etape 3 intégration de l'outil dans la webapp 
+
+Voir weather.app.py
+
+
+
