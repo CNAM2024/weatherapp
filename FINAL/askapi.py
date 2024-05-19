@@ -46,12 +46,14 @@ def ask_air(city: str, apikey: str) -> dict:
             else:
 
                 aqi = v
+                data[k] = {
+                
+                    "aqi":      aqi,
+                    "color":    setcolor(aqi)
+                
+                }
 
-                v = {"aqi": aqi, }
 
-                v['color'] = setcolor(v["aqi"])
-
-                data[k] = v
 
         return data
 
