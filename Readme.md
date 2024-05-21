@@ -1,44 +1,27 @@
-# Création d'une application web
+# Weather app
 
-## Initialisation
+## Installation
 
-- Readme.md
-- .gitignore
+```shell
+git clone git@github.com:CFAI2024-CPLR/appli_weather.git
+cd appli_weather/
+# Installation virtual env python
+python3 -m venv .venv/
+# Activation virtual env python
+. .venv/bin/activate 
+# (PSh/GitBash win/) source .venv/Scripts/activate
+# (si besoin) Désactivation virtual env python
+# deactivate
 
-Nous allons créer une application Python Flask
+# Installer les dépendances dans l'environnement Python
 
-## Etape 1
+# Choisir une étape
+cd 'ETAPE 1'
+# A NE FAIRE QU'UNE FOIS ! qq soit le dossier 
+pip3 install -r requirements.txt
 
-Une simple application formulaire => résultat
+# OU BIEN 
+pip3 install -r 'ETAPE 1/requirements.txt'
 
-- installation requirements
-- templates/
-    - base.html
-    - home.html
-    - result.html
-- static/
-    - style.css
 
-## Etape 2 création d'un outil interrogation d'API REST
-
-```python
-from askapi import ask_air
-
-ask_air(apikey="XXXXXXXXXXXXXXXXXXXXXXXX",city="Toulouse")
 ```
-```
-{'CO': {'concentration': 190.26, 'aqi': 2, 'color': 'green'},
- 'NO2': {'concentration': 1.63, 'aqi': 2, 'color': 'green'},
- 'O3': {'concentration': 74.39, 'aqi': 98, 'color': 'yellow'},
- 'SO2': {'concentration': 0.19, 'aqi': 0, 'color': 'black'},
- 'PM2.5': {'concentration': 2.46, 'aqi': 7, 'color': 'green'},
- 'PM10': {'concentration': 2.69, 'aqi': 2, 'color': 'green'},
- 'overall_aqi': {'aqi': 98, 'color': 'yellow'}}
-```
-
-## Etape 3 intégration de l'outil dans la webapp 
-
-Voir weather.app.py
-
-
-
